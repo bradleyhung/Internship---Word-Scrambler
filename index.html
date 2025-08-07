@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Level 1 Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- SECTION: Main Game Container -->
+    <div class="welcome-page">
+      <div id="intro">
+        <img
+          id="intro-img"
+          src="https://www.myfili.com/wp-content/uploads/2024/01/MyFiLi-Logo-1.png"
+          alt="MyFili Logo"
+          class="logo"
+        />
+        <p id="intro-text" class="game-description">
+          Ready to unscramble some real estate lingo? <br />
+          Get 5 right and you're basically a property pro! <br />
+          But slip up 3 times and well... maybe stick to flipping pancakes
+          instead. <br />
+          Give it your best shot and have fun. <br />
+        </p>
+        <button
+          type="button"
+          id="start-scrambler"
+          class="submit-button"
+          onclick="removeIntro()"
+        >
+          Start Game
+        </button>
+      </div>
+
+      <div class="hide" id="main-game">
+        <!-- HEADER: Notification Bar -->
+        <div class="notification-bar">
+          <p class="logo">MyFiLi📶</p>
+          <p class="score" id="incorrect-guess">Wrong Guess: 0</p>
+          <p class="score" id="score">Score: 0</p>
+        </div>
+
+        <!-- HEADER: Page Title -->
+        <h2>Real Estate Level 1: Word Scrambler</h2>
+
+        <!-- FORM: Word guessing game -->
+        <form id="gameForm">
+          <!-- LABEL: Word definition shown here -->
+          <h3 id="definition"></h3>
+
+          <!-- IMAGE: Illustration of the word -->
+          <img
+            id="wordImage"
+            class="game-featured-image"
+            src=""
+            alt="Illustration for the current word"
+          />
+
+          <!-- PROMPT: Word to unscramble -->
+          <h3 id="sWord">
+            Unscramble the word: <span id="scrambledWord"></span>
+          </h3>
+
+          <!-- INPUT: User guess -->
+          <label for="guessInput">Guess the word:</label>
+          <input type="text" id="guessInput" name="guess" required />
+
+          <!-- BUTTON: Submit guess -->
+          <button type="button" id="check-btn" class="submit-button">
+            Submit
+          </button>
+
+          <!-- BUTTON: New game -->
+          <button type="button" id="new-game" class="submit-button">
+            New Game
+          </button>
+
+          <!-- FEEDBACK: Displays correct or incorrect messages -->
+          <div id="feedback"></div>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

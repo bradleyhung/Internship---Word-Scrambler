@@ -21,7 +21,7 @@
   gap: 3vh;
 }
 
-.score {
+/* .score {
   margin: 0 auto;
   font-weight: bold;
   border-radius: 5px;
@@ -31,33 +31,31 @@
   align-items: flex-end;
   padding: 0 0.8rem 0 0;
   text-align: center;
-}
+} */
 
-.logo {
+/* .logo {
   margin: 0;
   padding: 0 0 0 0.8rem;
   width: 100%;
   max-width: 250px;
   margin-top: 2rem;
   height: auto;
-}
+} */
 
 .notification-bar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background: black;
   color: white;
-  padding: 0.5rem 1rem;
   width: calc(100% + 2rem);
   margin-left: -1rem;
-  margin-right: -1rem;
   box-sizing: border-box;
-  border-radius: 0.5rem;
+  border-radius: 0.3rem;
   position: relative;
 }
 
-.notification-bar .logo {
+/* .notification-bar .logo {
   flex: 1;
   text-align: left;
   margin: 0;
@@ -76,7 +74,7 @@
   flex: 1;
   text-align: right;
   margin: 0;
-}
+} */
 
 /* Quiz Button Container */
 .answer-buttons {
